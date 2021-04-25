@@ -4,6 +4,10 @@ from pages.base_page import BasePage
 
 
 class LandingPage(BasePage):
+    """
+    LANDING PAGE: PAGINA A LA CUAL CAE EL USUARIO AL
+    NAVEGAR AL SITIO
+    """
     # navigation
     _call_us_now = by(how=By.CSS_SELECTOR, using="span[class='shop-phone']")
     _contact_us = by(how=By.CSS_SELECTOR, using='#contact-link')

@@ -4,6 +4,10 @@ from pages.base_page import BasePage
 
 
 class AuthenticationPage(BasePage):
+    """
+    PAGINA DE AUTENTICACION: POM
+    PARA MAPEAR ELEMENTOS DEL DOM Y LOS COMPORTAMIENTOS DEL MISMO
+    """
     # create account
     _email_create = by(how=By.CSS_SELECTOR, using='#email_create')
     _create_account = by(how=By.CSS_SELECTOR, using='#SubmitCreate')
@@ -15,10 +19,21 @@ class AuthenticationPage(BasePage):
     _sign_in = by(how=By.CSS_SELECTOR, using='#SubmitLogin')
 
     def create_account(self, email):
+        """
+        Crear una cuenta
+        :param email: mail al cual se va a crear la cuenta
+        :return: NONE
+        """
         self._email_create().send_keys(email)
         self._create_account().click()
 
     def login(self, email, password):
+        """
+        Loguearse utilizando un mail y contraseña validos
+        :param email: email
+        :param password: contraseña
+        :return: NONE
+        """
         self._email_address().send_keys(email)
         self._password().send_keys(password)
         self._sign_in().click()
