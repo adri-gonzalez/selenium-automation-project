@@ -4,11 +4,6 @@ from pages.base_page import BasePage
 
 
 class MyAccountPage(BasePage):
-    """
-    MI CUENTA: PAGE OBJECT MODEL CORRESPONDIENTE AL FINALIZAR UN REGISTRO
-    O LOGUEARSE A LA APLICACION
-    """
-
     _order_history_and_details = by(how=By.CSS_SELECTOR, using='a[title="Orders"] span')
     _my_credit_slips = by(how=By.CSS_SELECTOR, using='a[title="Credit slips"] span')
     _my_address = by(how=By.CSS_SELECTOR, using='a[title="Addresses"] span')

@@ -4,14 +4,10 @@ from pages.base_page import BasePage
 
 
 class ContactUsPage(BasePage):
-    """
-    PAGINA DE CONTACTO, CONTIENE WEB-ELEMENTS Y
-    EL COMPORTAMIENNTO DE MANDAR UN MENSAJE
-    """
     _subject_heading = by(how=By.CSS_SELECTOR, using='#id_contact')
     _email_address = by(how=By.CSS_SELECTOR, using='#email')
     _order_reference = by(how=By.CSS_SELECTOR, using='#id_order')
-    _attach_file = by(how=By.CSS_SELECTOR, using='#fileUpload')s
+    _attach_file = by(how=By.CSS_SELECTOR, using='#fileUpload')
     _message = by(how=By.CSS_SELECTOR, using='message')
     _send_button = by(how=By.CSS_SELECTOR, using='#submitMessage')
 

@@ -4,11 +4,6 @@ from selenium.webdriver.common.by import By
 
 
 class FooterPage(AbstractWebObject):
-    """
-    FOOTER WEB-OBJECT: WEBOBJECT SIGNIFICA QUE ES PARTE DE UNA PAGINA.
-    LA IDEA DE IMPLEMENTAR WEB-OBJECTS ES PODER SEGMENTAR UNA GRAN CANTIDAD DE LOGICA
-    EN UN ARCHIVO SEPARADO AL PAGE OBJECT MODEL QUE CONTENDRIA ESTA LOGICA
-    """
     # newsletter
     _enter_your_email = by(how=By.CSS_SELECTOR, using='#newsletter-input')
     _submit_email = by(how=By.CSS_SELECTOR, using='button[name="submitNewsletter"]')

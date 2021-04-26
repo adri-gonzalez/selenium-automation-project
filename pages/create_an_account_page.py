@@ -5,10 +5,6 @@ from pages.base_page import BasePage
 
 
 class CreateAnAccountPage(BasePage):
-    """
-    PAGINA CREAR UNA CUENTA. CONTIENE LOS METODOS
-    PARA REGISTRAR UNA CUENTA NNUEVA
-    """
     _title = by(how=By.CSS_SELECTOR, using='.radio-inline label', multiple=True)
     _first_name = by(how=By.CSS_SELECTOR, using='#customer_firstname')
     _last_name = by(how=By.CSS_SELECTOR, using='#customer_lastname')

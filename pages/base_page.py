@@ -6,10 +6,6 @@ from selenium.webdriver.common.by import By
 
 
 class BasePage(AbstractPageObject):
-    """
-    CLASE BASE DE LA CUAL HEREDARAN LOS PAGE OBJECT MODELS
-    QUE CONTENGAN HEADER Y FOOTER COMO COMPONENTES
-    """
     header_wo = by_wo(HeaderPage, how=By.CSS_SELECTOR, using='')
     footer_wo = by_wo(FooterPage, how=By.CSS_SELECTOR, using='')
 
